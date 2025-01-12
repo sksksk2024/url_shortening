@@ -61,19 +61,19 @@ body {
   background-color: var(--dark-violet);
   background-repeat: no-repeat;
   background-position: 90%;
-  background-size: 100% 24dvh;
+  background-size: 100% 50dvh;
 }
 
 @media (min-width: 48em) {
   #link-shortener {
-    background-size: 100dvw 24dvh;
+    background-size: 100dvw 50dvh;
     background-image: url('./images/bg-shorten-desktop.svg');
   }
 }
 
 @media (min-width: 64em) {
   #link-shortener {
-    background-size: 100dvw 14dvh;
+    background-size: 100dvw 35dvh;
     background-image: url('./images/bg-shorten-desktop.svg');
   }
 }
@@ -83,18 +83,18 @@ body {
   background-color: var(--dark-violet);
   background-repeat: no-repeat;
   background-position: 100%;
-  background-size: 80% 28dvh;
+  background-size: 80% 60dvh;
 }
 
 @media (min-width: 32em) {
   #link-shortener-today {
-    background-size: 80% 24dvh;
+    background-size: 80% 50dvh;
   }
 }
 
 @media (min-width: 48em) {
   #link-shortener-today {
-    background-size: 100dvw 30dvh;
+    background-size: 100dvw 50dvh;
     background-image: url('./images/bg-shorten-desktop.svg');
   }
 }

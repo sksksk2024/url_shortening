@@ -8,7 +8,29 @@ const Header = () => {
   const [isHidden, setIsHidden] = useState(true);
 
   // Toggle menu visibility
-  const MenuStart = () => setIsHidden(!isHidden);
+  const MenuStart = () => {
+    const breakpoint = 64 * 16; // 64em * 16px
+
+    if (window.innerWidth < breakpoint) {
+      setIsHidden(!isHidden);
+    } else {
+      setIsHidden(true);
+    }
+  };
+
+  // Adding event listener to handle window resize
+  useEffect(() => {
+    // Call MenuStart on window resize
+    const handleResize = () => {
+      MenuStart();
+    };
+
+    // Run on initial render and whenever the window resizes
+    window.addEventListener('resize', handleResize);
+
+    // Clean up the event listener on component unmount
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   // Add or remove ".no-scroll" class on the body when the menu is open
   useEffect(() => {
@@ -93,7 +115,7 @@ const Header = () => {
           } absolute w-[100%] top-2/3 mt-16M mx-auto lg:hidden`}
         >
           <ul
-            className={`static rounded-10BR animate-fade translate-x-1/2 flex flex-col justify-start items-center gap-4 font-bold text-white text-lg w-[50dvw] max-w-container-600 max-h-container-600 p-32P bg-very-dark-violet background ${
+            className={`static rounded-10BR animate-fade translate-x-1/2 flex flex-col justify-start items-center gap-4 font-bold text-white text-lg w-[50dvw] max-w-container-600 max-h-container-600 p-32P bg-very-dark-violet background lg:hidden ${
               isHidden && 'select-none -z-50 absolute left-800I'
             }`}
           >
