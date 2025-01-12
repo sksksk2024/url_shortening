@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import logo from '../images/logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import work from './../images/illustration-working.svg';
 
 const Header = () => {
   const [isHidden, setIsHidden] = useState(true);
@@ -24,7 +25,7 @@ const Header = () => {
   }, [isHidden]);
 
   return (
-    <header>
+    <header className="min-h-container-400 lg:min-h-container-100">
       <section className="relative flex justify-between lg:justify-around items-center w-screen h-64H lg:px-0 py-64P bg-white">
         <div className="relative flex gap-8 font-bold text-md ml-16M">
           <img className="w-112W sm:w-128W" src={logo} alt="brand" />
@@ -88,7 +89,7 @@ const Header = () => {
           className={`${
             isHidden
               ? 'animate-fadeOut cursor-none -z-10'
-              : 'z-50 animate-comeIn'
+              : 'z-50 animate-comeIn mb-16M'
           } absolute w-[100%] top-2/3 mt-16M mx-auto lg:hidden`}
         >
           <ul
@@ -122,7 +123,7 @@ const Header = () => {
             <li className="relative cursor-pointer group">
               <button
                 disabled
-                className="cursor-pointer text-white bg-cyan rounded-20BR px-16P py-8P hover:opacity-60 w-[40dvw] max-w-container-500"
+                className="cursor-pointer text-white bg-cyan rounded-30BR px-16P py-16P hover:opacity-60 w-[40dvw] max-w-container-500"
               >
                 Sign Up
               </button>
@@ -134,18 +135,27 @@ const Header = () => {
         <div className="relative hidden lg:flex gap-8 font-bold text-md p-16P">
           <ul className="flex items-center gap-8 text-white">
             <li className="relative cursor-pointer group">
-              <button className="text-black px-16P py-8P text-gray">
+              <button className="text-black px-16P py-16P text-gray">
                 Login
               </button>
             </li>
             <li className="relative cursor-pointer group">
-              <button className="text-black text-white bg-cyan rounded-20BR px-16P py-8P hover:opacity-60">
+              <button className="text-black text-white bg-cyan rounded-30BR px-48P py-16P hover:opacity-60">
                 Sign Up
               </button>
             </li>
           </ul>
         </div>
       </section>
+      <img
+        src={work}
+        className={`${
+          isHidden
+            ? 'block static z-50 translate-x-1/3 lg:hidden'
+            : 'relative animate-fadeOut -z-50 transform transition-transform duration-500 delay-1000 translate-x-[1800px]'
+        }`}
+        alt="working illustration"
+      />
     </header>
   );
 };

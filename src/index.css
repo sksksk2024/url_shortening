@@ -40,6 +40,7 @@ img {
   --dark-violet: hsl(257, 27%, 26%);
   --red: hsl(0, 87%, 67%);
   --gray: hsl(0, 0%, 75%);
+  --gray-bg: hsl(0, 0%, 95%);
   --grayish-violet: hsl(257, 7%, 63%);
   --very-dark-blue: hsl(255, 11%, 22%);
   --very-dark-violet: hsl(260, 8%, 14%);
@@ -52,6 +53,19 @@ body {
   width: 100dvw;
   overflow-x: clip;
   overflow-y: scroll;
+}
+
+#link-shortener {
+  background-image: url('./images/bg-boost-mobile.svg');
+  background-color: var(--dark-violet);
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: 80% 24dvh;
+
+  @media (min-width: 768) {
+    background-size: 60dvw 14dvh;
+    background-image: url('./images/bg-shorten-desktop.svg');
+  }
 }
 
 /* Loader */
