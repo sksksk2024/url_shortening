@@ -134,8 +134,9 @@ const Header = () => {
                 Resources
               </button>
             </li>
-
-            <hr className="w-[40dvw] max-w-container-500 border-solid border-gray border-1 opacity-60" />
+            <li>
+              <hr className="w-[40dvw] max-w-container-500 border-solid border-gray border-1 opacity-60" />
+            </li>
 
             <li className="relative cursor-pointer group">
               <button disabled className="cursor-pointer text-white ">
@@ -176,7 +177,6 @@ const Header = () => {
             ? 'block static z-50 translate-x-1/3 lg:hidden'
             : 'relative animate-fadeOut -z-50 transform transition-transform duration-500 delay-1000 translate-x-[1800px]'
         }`}
-        alt="working illustration"
       />
     </header>
   );

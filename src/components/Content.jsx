@@ -135,7 +135,7 @@ const Content = () => {
         <div className="relative flex flex-col xl:flex-row justify-center items-center gap-24 my-64M px-32P">
           <div className="z-10 relative xl:bottom-64I font-bold flex flex-col justify-center items-center gap-2 max-w-container-400 text-center p-32P px-48P pt-0 bg-white rounded-5BR">
             <div className="relative bg-dark-violet p-24P rounded-full bottom-48I">
-              <img src={img1} alt="brand recognition illustration" />
+              <img src={img1} aria-label="brand recognition illustration" />
             </div>
             <h3 className="text-black text-xl">Brand Recognition</h3>
             <p className="text-gray">
@@ -147,7 +147,7 @@ const Content = () => {
 
           <div className="z-10 relative font-bold flex flex-col justify-center items-center gap-2 max-w-container-400 text-center p-32P px-48P pt-0 bg-white rounded-5BR">
             <div className="relative bg-dark-violet p-24P rounded-full bottom-48I">
-              <img src={img2} alt="detailed records illustration" />
+              <img src={img2} aria-label="detailed records illustration" />
             </div>
             <h3 className="text-black text-xl">Detailed Records</h3>
             <p className="text-gray">
@@ -159,7 +159,7 @@ const Content = () => {
 
           <div className="z-10 relative xl:top-64I font-bold flex flex-col justify-center items-center gap-2 max-w-container-400 text-center p-32P px-48P pt-0 bg-white rounded-5BR">
             <div className="relative bg-dark-violet p-24P rounded-full bottom-48I">
-              <img src={img3} alt="fully customizable illustration" />
+              <img src={img3} aria-label="fully customizable illustration" />
             </div>
             <h3 className="text-black text-xl">Fully Customizable</h3>
             <p className="text-gray">

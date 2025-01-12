@@ -1,6 +1,6 @@
 const Facebook = () => {
   return (
-    <div className="group cursor-pointer" aria-label="facebook" role="button">
+    <div className="group cursor-pointer" role="button">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"

@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="flex flex-col lg:flex-row justify-start items-center lg:items-start gap-12 lg:gap-16">
         <ul className="flex flex-col justify-center items-center lg:items-start gap-4">
           <li className="font-bold text-white mb-16M" aria-label="title 1">
-            Features
+            <h2>Features</h2>
           </li>
           <li className="hover:text-cyan cursor-pointer">Link Shortening</li>
           <li className="hover:text-cyan cursor-pointer">Branded Links</li>
@@ -21,7 +21,7 @@ const Footer = () => {
 
         <ul className="flex flex-col justify-center items-center lg:items-start gap-4">
           <li className="font-bold text-white mb-16M" aria-label="title 2">
-            Resources
+            <h2>Resources</h2>
           </li>
           <li className="hover:text-cyan cursor-pointer">Blog</li>
           <li className="hover:text-cyan cursor-pointer">Developers</li>
@@ -30,7 +30,7 @@ const Footer = () => {
 
         <ul className="flex flex-col justify-center items-center lg:items-start gap-4">
           <li className="font-bold text-white mb-16M" aria-label="title 3">
-            Company
+            <h2>Company</h2>
           </li>
           <li className="hover:text-cyan cursor-pointer">About</li>
           <li className="hover:text-cyan cursor-pointer">Our Team</li>
@@ -40,10 +40,18 @@ const Footer = () => {
         </ul>
 
         <ul className="flex justify-center items-center gap-6">
-          <Facebook />
-          <Twitter />
-          <Pinterest />
-          <Insta />
+          <li>
+            <Facebook />
+          </li>
+          <li>
+            <Twitter />
+          </li>
+          <li>
+            <Pinterest />
+          </li>
+          <li>
+            <Insta />
+          </li>
         </ul>
       </div>
     </footer>
