@@ -73,7 +73,7 @@ const Content = () => {
         <form
           onSubmit={handleSubmit}
           id="link-shortener"
-          className="w-[80%] mx-auto flex flex-col lg:flex-row justify-center items-center gap-4 px-0 py-48P lg:px-32P rounded-10BR"
+          className="max-w-container-1440 mx-auto w-[80%] mx-auto flex flex-col lg:flex-row justify-center items-center gap-4 px-0 py-48P lg:px-32P rounded-10BR"
         >
           <div className="w-[90%] lg:w-3/4 relative">
             <input
@@ -101,7 +101,7 @@ const Content = () => {
         </form>
 
         {/* Links */}
-        <ul className="flex flex-col justify-center items-center gap-6 -mt-67.2M -mb-16M">
+        <ul className="max-w-container-1440 mx-auto flex flex-col justify-center items-center gap-6 -mt-67.2M -mb-16M">
           {links.map(({ original, short }, index) => (
             <li
               key={index}
@@ -132,7 +132,7 @@ const Content = () => {
         </div>
 
         {/* Statistics Cards */}
-        <div className="relative flex flex-col xl:flex-row justify-center items-center gap-24 my-64M px-32P">
+        <div className="max-w-container-1440 mx-auto relative flex flex-col xl:flex-row justify-center items-center gap-24 my-64M px-32P">
           <div className="z-10 relative xl:bottom-64I font-bold flex flex-col justify-center items-center gap-2 max-w-container-400 text-center p-32P px-48P pt-0 bg-white rounded-5BR">
             <div className="relative bg-dark-violet p-24P rounded-full bottom-48I">
               <img src={img1} aria-hidden="true" />

@@ -174,6 +174,7 @@ module.exports = {
         'container-1200': '75rem',
         'container-1300': '81.25rem',
         'container-1400': '87.5rem',
+        'container-1440': '90rem',
         'container-1500': '93.75rem',
       },
       minWidth: {
