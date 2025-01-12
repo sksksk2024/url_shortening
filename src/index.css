@@ -21,6 +21,7 @@ img {
 
 :root {
   /* Font Size */
+  --font-size-1-5xs: 0.1rem;
   --font-size-2xs: 0.5rem;
   --font-size-xs: 0.75rem; /* Tailwind default */
   --font-size-sm: 0.875rem; /* Tailwind default */
@@ -59,11 +60,20 @@ body {
   background-image: url('./images/bg-boost-mobile.svg');
   background-color: var(--dark-violet);
   background-repeat: no-repeat;
-  background-position: 100%;
-  background-size: 80% 24dvh;
+  background-position: 90%;
+  background-size: 100% 24dvh;
+}
 
-  @media (min-width: 768) {
-    background-size: 60dvw 14dvh;
+@media (min-width: 48em) {
+  #link-shortener {
+    background-size: 100dvw 24dvh;
+    background-image: url('./images/bg-shorten-desktop.svg');
+  }
+}
+
+@media (min-width: 64em) {
+  #link-shortener {
+    background-size: 100dvw 14dvh;
     background-image: url('./images/bg-shorten-desktop.svg');
   }
 }
@@ -73,10 +83,18 @@ body {
   background-color: var(--dark-violet);
   background-repeat: no-repeat;
   background-position: 100%;
-  background-size: 80% 24dvh;
+  background-size: 80% 28dvh;
+}
 
-  @media (min-width: 768) {
-    background-size: 60dvw 14dvh;
+@media (min-width: 32em) {
+  #link-shortener-today {
+    background-size: 80% 24dvh;
+  }
+}
+
+@media (min-width: 48em) {
+  #link-shortener-today {
+    background-size: 100dvw 30dvh;
     background-image: url('./images/bg-shorten-desktop.svg');
   }
 }

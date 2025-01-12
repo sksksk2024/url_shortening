@@ -59,7 +59,7 @@ const Header = () => {
 
         {/* Accessing the menu - Mobile */}
         <div
-          className="relative cursor-pointer w-32W h-32H block lg:hidden mr-16M"
+          className="relative cursor-pointer w-32W h-32H block lg:hidden mr-32M"
           onClick={MenuStart}
         >
           {/* Hamburger Icon */}

@@ -303,6 +303,7 @@ module.exports = {
       },
       screens: {
         '3xs': '0px',
+        '23-125': '23.125rem',
         '2xs': '23.75rem', // 380px
         custom: '26.875rem', // 430px
         xs: '30rem', // 480px
@@ -313,6 +314,7 @@ module.exports = {
         '2xl': '96rem', // 1536px
       },
       fontSize: {
+        '1-5xs': 'var(--font-size-1-5xs)',
         '2xs': 'var(--font-size-2xs)',
         xs: 'var(--font-size-xs)',
         sm: 'var(--font-size-sm)',
@@ -340,6 +342,8 @@ module.exports = {
         '1.2M': '1.2rem',
         '48M': '3rem',
         '64M': '4rem',
+        '67.2M': '4.2rem',
+        '80M': '5rem',
         '96M': '6rem',
         '108M': '6.75',
         '128M': '8rem',
