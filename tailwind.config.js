@@ -192,37 +192,39 @@ module.exports = {
         'container-1500': '93.75rem', // 1500px
       },
       width: {
-        '1W': '0.0039rem', // 1px
-        '1.6W': '0.0625rem', // 1px
-        '8W': '0.3125rem', // 5px
-        '16W': '1rem', // 16px
-        '24W': '1.5rem', // 24px
-        '28-8W': '1.8rem', // 28.8px
-        '32W': '2rem', // 32px
-        '48W': '3rem', // 48px
-        '64W': '4rem', // 64px
-        '80W': '5rem', // 80px
-        '96W': '6rem', // 96px
-        '112W': '7rem', // 112px
-        '128W': '8rem', // 128px
-        '144W': '9rem', // 144px
-        '160W': '10rem', // 160px
-        '200W': '12.5rem', // 200px
-        '208W': '13rem', // 208px
-        '256W': '16rem', // 256px
-        '272W': '17rem', // 272px
-        '288W': '18rem', // 288px
-        '300W': '18.75rem', // 300px
-        '316W': '19.75rem', // 316px
-        '400W': '25rem', // 400px
-        '464W': '29rem', // 464px
-        '600W': '37.5rem', // 600px
-        '736W': '46rem', // 736px
-        '800W': '50rem', // 800px
-        '936W': '58.5rem', // 936px
-        logo: '7.8125rem', // 125px
-        how: '11.375rem', // 182px
-        btn: '35%', // no conversion needed
+        '1W': '0.0039rem',
+        '1.6W': '0.0625rem',
+        '8W': '0.3125rem',
+        '16W': '1rem',
+        '24W': '1.5rem',
+        '28-8W': '1.8rem',
+        '32W': '2rem',
+        '48W': '3rem',
+        '64W': '4rem',
+        '80W': '5rem',
+        '96W': '6rem',
+        '112W': '7rem',
+        '128W': '8rem',
+        '144W': '9rem',
+        '160W': '10rem',
+        '200W': '12.5rem',
+        '208W': '13rem',
+        '256W': '16rem',
+        '272W': '17rem',
+        '288W': '18rem',
+        '300W': '18.75rem',
+        '316W': '19.75rem',
+        '400W': '25rem',
+        '464W': '29rem',
+        '480W': '30rem',
+        '496W': '31rem',
+        '600W': '37.5rem',
+        '736W': '46rem',
+        '800W': '50rem',
+        '936W': '58.5rem',
+        logo: '7.8125rem',
+        how: '11.375rem',
+        btn: '35%',
       },
       maxHeight: {
         'container-100': '6.25rem',
@@ -374,6 +376,7 @@ module.exports = {
         '320I': '20rem',
         '352I': '22rem',
         '400I': '25rem',
+        '800I': '50rem',
       },
       backgroundImage: {
         'custom-gradient':
