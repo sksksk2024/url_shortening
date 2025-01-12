@@ -68,6 +68,19 @@ body {
   }
 }
 
+#link-shortener-today {
+  background-image: url('./images/bg-boost-mobile.svg');
+  background-color: var(--dark-violet);
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: 80% 24dvh;
+
+  @media (min-width: 768) {
+    background-size: 60dvw 14dvh;
+    background-image: url('./images/bg-shorten-desktop.svg');
+  }
+}
+
 /* Loader */
 .container {
   height: 5vh;

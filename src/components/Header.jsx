@@ -28,7 +28,7 @@ const Header = () => {
     <header className="min-h-container-400 lg:min-h-container-100">
       <section className="relative flex justify-between lg:justify-around items-center w-screen h-64H lg:px-0 py-64P bg-white">
         <div className="relative flex gap-8 font-bold text-md ml-16M">
-          <img className="w-112W sm:w-128W" src={logo} alt="brand" />
+          <img className="w-112W sm:w-128W" src={logo} alt="shortly" />
           <ul className="hidden lg:flex items-center gap-8 text-black">
             <li className="relative cursor-pointer group">
               <button

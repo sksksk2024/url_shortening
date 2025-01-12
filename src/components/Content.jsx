@@ -12,11 +12,11 @@ const Content = () => {
         >
           <input
             type="text"
-            className="font-semibold input w-[90%] bg-white"
+            className="font-semibold input w-[90%] lg:w-3/4 bg-white"
             placeholder="Shorten a link here..."
             aria-label="add a link to shorten it"
           />
-          <button className="font-semibold text-black text-white bg-cyan rounded-5BR px-16P py-3 hover:opacity-60 w-[90%]">
+          <button className="font-semibold text-black text-white bg-cyan rounded-5BR px-16P py-3 hover:opacity-60 w-[90%] lg:w-1/4">
             Shorten It!
           </button>
         </form>
@@ -30,8 +30,8 @@ const Content = () => {
           </p>
         </div>
 
-        <div className="relative flex flex-col xl:flex-row justify-center items-center gap-24">
-          <div className="z-10 relative font-bold flex flex-col justify-center items-center gap-2 max-w-container-400 text-center p-32P  px-48P pt-16 bg-white rounded-5BR">
+        <div className="relative flex flex-col xl:flex-row justify-center items-center gap-24 my-64M">
+          <div className="z-10 relative xl:bottom-64I font-bold flex flex-col justify-center items-center gap-2 max-w-container-400 text-center p-32P  px-48P pt-16 bg-white rounded-5BR">
             <div className="absolute bg-dark-violet p-24P rounded-full bottom-224I 2xs:bottom-192I">
               <img src={img1} alt="brand recognition" />
             </div>
@@ -55,7 +55,7 @@ const Content = () => {
             </p>
           </div>
 
-          <div className="z-10 relative font-bold flex flex-col justify-center items-center gap-2 max-w-container-400 text-center p-32P px-48P pt-16 bg-white rounded-5BR">
+          <div className="z-10 relative xl:top-64I font-bold flex flex-col justify-center items-center gap-2 max-w-container-400 text-center p-32P px-48P pt-16 bg-white rounded-5BR">
             <div className="absolute bg-dark-violet p-24P rounded-full bottom-208I 2xs:bottom-192I">
               <img src={img3} alt="brand recognition" />
             </div>

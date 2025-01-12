@@ -16,7 +16,7 @@ const Hero = () => {
           Build your brand’s recognition and get detailed insights on how your
           links are performing.
         </p>
-        <button className="font-semibold text-black text-white bg-cyan rounded-20BR p-16P my-16M hover:opacity-60">
+        <button className="font-semibold text-black text-white bg-cyan rounded-30BR p-16P px-32P my-16M hover:opacity-60">
           Get Started
         </button>
       </section>
