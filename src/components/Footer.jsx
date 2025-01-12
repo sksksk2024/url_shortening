@@ -7,7 +7,7 @@ import Facebook from './utils/Facebook';
 const Footer = () => {
   return (
     <footer className="flex flex-col lg:flex-row justify-start lg:justify-around items-center lg:items-start gap-12 bg-very-dark-violet py-48P">
-      <img src={logoW} alt="shortly" />
+      <img src={logoW} aria-hidden="true" />
 
       <div className="flex flex-col lg:flex-row justify-start items-center lg:items-start gap-12 lg:gap-16">
         <ul className="flex flex-col justify-center items-center lg:items-start gap-4">

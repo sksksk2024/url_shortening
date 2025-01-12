@@ -1,6 +1,6 @@
 const Twitter = () => {
   return (
-    <div className="cursor-pointer" role="button">
+    <div className="cursor-pointer" aria-label="twitter" role="button">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
