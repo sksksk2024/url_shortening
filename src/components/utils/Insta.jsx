@@ -1,6 +1,6 @@
 const Insta = () => {
   return (
-    <div className="group cursor-pointer" aria-label="instagram">
+    <div className="group cursor-pointer" aria-label="instagram" role="button">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
