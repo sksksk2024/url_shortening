@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
+import { motion, useCycle } from 'framer-motion';
 import img1 from './../images/icon-brand-recognition.svg';
 import img2 from './../images/icon-detailed-records.svg';
 import img3 from './../images/icon-fully-customizable.svg';
 
 const Content = () => {
+  const [animation, cycleAnimation] = useCycle('animationOne', 'animationTwo');
   const [text, setText] = useState('');
   const [invalid, setInvalid] = useState(false);
   const [links, setLinks] = useState(() => {
@@ -12,8 +14,35 @@ const Content = () => {
     return savedLinks ? JSON.parse(savedLinks) : [];
   });
 
+  const inputVariants = {
+    default: {
+      scale: 1,
+    },
+    typing: {
+      scale: 1.03,
+      transition: {
+        duration: 0.2,
+      },
+    },
+  };
+
+  const buttonVariants = {
+    default: {
+      scale: 1,
+      backgroundColor: '#2acfcf',
+    },
+    success: {
+      scale: 1.1,
+      backgroundColor: '#28a745',
+      transition: {
+        duration: 0.3,
+      },
+    },
+  };
+
   const inputText = (e) => {
     setText(e.target.value.trimStart());
+    cycleAnimation('typing');
   };
 
   const handleSubmit = async (e) => {
@@ -46,6 +75,7 @@ const Content = () => {
         localStorage.setItem('shortenedLinks', JSON.stringify(updatedLinks));
         setText('');
         setInvalid(false);
+        cycleAnimation('success');
       } else {
         console.error('Error response:', data); // Log server error
         setInvalid(true);
@@ -56,9 +86,13 @@ const Content = () => {
     }
   };
 
-  const handleCopy = (shortLink) => {
-    navigator.clipboard.writeText(shortLink);
-    alert('Link copied to clipboard!');
+  const handleCopy = async (shortLink) => {
+    try {
+      await navigator.clipboard.writeText(shortLink);
+      alert('Link copied to clipboard!');
+    } catch (error) {
+      console.error('Copy failed', error);
+    }
   };
 
   useEffect(() => {
@@ -76,7 +110,7 @@ const Content = () => {
           className="max-w-container-1440 mx-auto w-[80%] mx-auto flex flex-col lg:flex-row justify-center items-center gap-4 px-0 py-48P lg:px-32P rounded-10BR"
         >
           <div className="w-[90%] lg:w-3/4 relative">
-            <input
+            <motion.input
               type="text"
               value={text}
               onChange={inputText}
@@ -85,6 +119,8 @@ const Content = () => {
               }`}
               placeholder="Shorten a link here..."
               aria-label="add a link to shorten it"
+              variants={inputVariants}
+              animate={text ? 'typing' : 'default'}
             />
             {invalid && (
               <span className="absolute left-0 -bottom-32I text-red">
@@ -92,12 +128,15 @@ const Content = () => {
               </span>
             )}
           </div>
-          <button
+          <motion.button
             type="submit"
             className="font-semibold text-black text-white bg-cyan rounded-5BR px-16P py-3 hover:opacity-60 w-[90%] lg:w-1/4"
+            variants={text ? buttonVariants : ''}
+            initial="default"
+            animate={animation}
           >
             Shorten It!
-          </button>
+          </motion.button>
         </form>
 
         {/* Links */}
